@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tony Stark Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/packs/brands">
 </head>
 <body>
     <main>
@@ -13,41 +14,40 @@
             <div>
                 <h2 id="h-email">info@gmail.com</h2>
             </div>
-
-            <nav>
+                <nav id="fdv-links">
                 <ul id="h-links">
-                    <li id="gitlink"><a href="#">github</a></li>
-                    <li id="linkedinl"><a href="#">linkedin</a></li>
-                    <li id="yt-link"><a href="#">youtube</a></li>
+                    <li id="gitlink"><a href="#">Github</a></li>
+                    <li id="linkedinl"><a href="#">Linkedin</a></li>
+                    <li id="yt-link"><a href="#">Youtube</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- First section: IMAGE, BUTTON AND PROFESSIONAL TAGLINE -->
-        <section class="hero">
+        <section>
             <!-- this is my hero section container that has my image and my name -->
-            <div>
-                <div>
-                    <img src="" alt="Profile Picture" id="hr-image">
+            <div class="pfp">
+                <div id="dv-img1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRECIcpo2AD22qzOsQT91ihsrC2eLjSYxXGdGCB6yy4qA&s&ec=121585071" alt="Profile Picture" id="hr-image">
                 </div>
 
                 <div>
-                    <p id="h-name">Tony Stark</p>
+                    <p id="hr-name">Tony Stark 👋</p>
                 </div>
             </div>
 
             <!-- this is a section that has my professional tagline and a button to download my CV -->
             <div>
-                <div id="dh-text">
+                <div id="hr-textd">
                     <h1 id="h-text">Turning complex problems into elegant digital solutions</h1>
                 </div>
-                <div>
-                    <button id="cv-button"> Download CV</button>
+                <div class="hero-content">
+                    <button> Download CV ⬇</button>
                 </div>
             </div>
 
-            <nav>
-                <ul id="2-nav">
+            <nav id="dv-nav2">
+                <ul id="nav-2">
                     <li id="Home"><a href="#">Home</a></li>
                     <li id="Account"><a href="#">Profile</a></li>
                     <li id="Settings"><a href="#">Settings</a></li>
@@ -58,18 +58,22 @@
         </section>
 
         <!-- About me Section -->
-        <section>
+         <section class="abt">
+            <div>
+                <p id="abt-me">About me</p>
+            </div>
+         </section>
+        <section id="about">
             <div id="abt-img">
-                <img id="ab-img" src="https://images.unsplash.com/photo-1586716402203-79219bede43c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRyYWl0JTIwaW1hZ2VzJTIwYmxhY2slMjBtYW58ZW58MHx8MHx8fDA%3D" alt="Project 1">
+                <img id="ab-img" src="data:image/jpeg;base64,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" alt="Project 1">
             </div>
 
             <div id="ab-pd">
                 <p id="abt-p">
-                    Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Est dolores ex natus, 
-                    earum quia cumque nisi eum, voluptate 
-                    voluptatem inventore eveniet debitis blanditiis 
-                    laboriosam impedit facilis non recusandae? Rem, earum.
+                    I'm Tony Stark, a full-stack developer, inventor, and unapologetic tech enthusiast with a passion for building the future one line of code at a time. My work isn’t just about writing programs — it’s about crafting intelligent, efficient, and innovative solutions that push the boundaries of what’s possible in the digital space.
+                </p>
+                <p id="abt-p2">
+                    Over the years, I've worked on everything from sleek, high-performance websites to complex, AI-powered applications. I believe that technology should be as beautiful as it is functional, so my process blends engineering precision with creative design thinking. Whether I’m designing a scalable back-end architecture, polishing a pixel-perfect front-end, or integrating advanced technologies like AI and IoT, I strive to create meaningful digital experiences.
                 </p>
             </div>
         </section>
@@ -78,9 +82,9 @@
         <footer>
             <nav id="nv-ft">
                 <ul id="footer-list">
-                    <li id="gitlink"><a href="#">github</a></li>
-                    <li id="linkedinl"><a href="#">linkedin</a></li>
-                    <li id="yt-link"><a href="#">youtube</a></li>
+                    <li id="gitlink"><a href="#">Github</a></li>
+                    <li id="linkedinl"><a href="#">Linkedin</a></li>
+                    <li id="yt-link"><a href="#">Youtube</a></li>
                 </ul>
             </nav>
         </footer>
